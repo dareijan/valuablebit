@@ -43,7 +43,7 @@ export default function App() {
       style={{ display: "flex", flexDirection: "column", gap: "10px" }}
     >
       <Container>
-        <div>Amiga (It Came From The Desert)</div>
+        <div>○ Amiga (It Came From The Desert)</div>
         <BorderLinearProgress variant="determinate" value={10} />     
       </Container>
       <Container>
@@ -67,7 +67,7 @@ export default function App() {
         <BorderLinearProgress variant="determinate" value={20} />     
       </Container>                   
       <Container>
-        <div>Peli (AC Rogue)</div>        
+        <div>○ Peli (AC Rogue)</div>        
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>  
       <Container>
@@ -79,7 +79,7 @@ export default function App() {
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>  
       <Container>
-        <div>Peli (AC II)</div>        
+        <div>Peli(360) (AC II)</div>        
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>    
       <Container>
@@ -87,7 +87,7 @@ export default function App() {
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>
       <Container>
-        <div>Peli (Kinetic)</div>        
+        <div>Peli(360) (Kinetic)</div>        
         <BorderLinearProgress variant="determinate" value={5} />
       </Container>   
       <Container>
@@ -103,15 +103,15 @@ export default function App() {
         <BorderLinearProgress variant="determinate" value={5} />
       </Container>      
       <Container>
-        <div>Peli (Plague Tale Innocance)</div>        
+        <div>○ Peli (Plague Tale Innocance)</div>        
         <BorderLinearProgress variant="determinate" value={40} />
       </Container>      
       <Container>
-        <div>Peli (Tomb Rainder)</div>        
+        <div>Peli (Tomb Raider)</div>        
         <BorderLinearProgress variant="determinate" value={40} />
       </Container>                                         
       <Container>
-        <div>Peli (Twitch)</div>        
+        <div>○ Peli (Twitch)</div>        
         <BorderLinearProgress variant="determinate" value={70} />
       </Container>
       <Container>
