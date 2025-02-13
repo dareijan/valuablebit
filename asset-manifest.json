@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/valuablebit/static/css/main.fc5c2c69.css",
-    "main.js": "/valuablebit/static/js/main.5f70031f.js",
+    "main.js": "/valuablebit/static/js/main.9a8358d0.js",
     "index.html": "/valuablebit/index.html",
     "main.fc5c2c69.css.map": "/valuablebit/static/css/main.fc5c2c69.css.map",
-    "main.5f70031f.js.map": "/valuablebit/static/js/main.5f70031f.js.map"
+    "main.9a8358d0.js.map": "/valuablebit/static/js/main.9a8358d0.js.map"
   },
   "entrypoints": [
     "static/css/main.fc5c2c69.css",
-    "static/js/main.5f70031f.js"
+    "static/js/main.9a8358d0.js"
   ]
 }
