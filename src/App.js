@@ -65,7 +65,11 @@ export default function App() {
       <Container>
         <div>PC (lasten opetuspelit)</div>
         <BorderLinearProgress variant="determinate" value={20} />     
-      </Container>                   
+      </Container>     
+      <Container>
+        <div>○ Peli (Plague Tale Innocence)</div>        
+        <BorderLinearProgress variant="determinate" value={10} />
+      </Container>                      
       <Container>
         <div>○ Peli (AC Rogue)</div>        
         <BorderLinearProgress variant="determinate" value={10} />
@@ -83,11 +87,11 @@ export default function App() {
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>    
       <Container>
-        <div>Peli (Witcher II)</div>        
+        <div>Peli 360 (Witcher II)</div>        
         <BorderLinearProgress variant="determinate" value={10} />
       </Container>
       <Container>
-        <div>Peli(360) (Kinetic)</div>        
+        <div>Peli (Hectic)</div>        
         <BorderLinearProgress variant="determinate" value={5} />
       </Container>   
       <Container>
