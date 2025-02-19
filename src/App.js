@@ -4,15 +4,15 @@ import LinearProgress from "@mui/material/LinearProgress";
 import Typography from '@mui/material/Typography';
 
 const colorMapping = {
-  1: "blue",  
-  2: "blue",  
-  5: "red",  
-  10: "red",
-  20: "red",
+  1: "grey",  
+  2: "grey",  
+  5: "grey",  
+  10: "grey",
+  20: "grey",
   30: "orange",  
   40: "orange",
-  50: "orange",
-  60: "orange",    
+  50: "green",
+  60: "green",    
   70: "green",
   80: "darkgreen",
   90: "darkgreen",    
@@ -42,6 +42,14 @@ export default function App() {
       className="App"
       style={{ display: "flex", flexDirection: "column", gap: "10px" }}
     >
+      <Container>
+        <div>Oravat</div>
+        <BorderLinearProgress variant="determinate" value={5} />     
+      </Container>   
+      <Container>
+        <div>Jousi</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>            
       <Container>
         <div>○ Amiga (It Came From The Desert)</div>
         <BorderLinearProgress variant="determinate" value={10} />     
@@ -108,7 +116,7 @@ export default function App() {
       </Container>      
       <Container>
         <div>○ Peli (Plague Tale Innocance)</div>        
-        <BorderLinearProgress variant="determinate" value={40} />
+        <BorderLinearProgress variant="determinate" value={60} />
       </Container>      
       <Container>
         <div>Peli (Tomb Raider)</div>        
@@ -134,6 +142,44 @@ export default function App() {
         <div>Peli (Alan Wake)</div>        
         <BorderLinearProgress variant="determinate" value={1} />
       </Container>
+
+      <Container>
+        <div>GB (DuckTales II)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container> 
+      <Container>
+        <div>GB (Donkey Kong)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>
+      <Container>
+        <div>GB (Kirby)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>
+      <Container>
+        <div>GB (I)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>
+      <Container>
+        <div>GB (II)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>
+      <Container>
+        <div>GB (III)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>
+      <Container>
+        <div>GB (IV)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>      
+      <Container>
+        <div>GB (VI)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>   
+      <Container>
+        <div>GB (VII)</div>
+        <BorderLinearProgress variant="determinate" value={0} />     
+      </Container>   
+
       <Container>
         <div>Amiga (I)</div>
         <BorderLinearProgress variant="determinate" value={0} />     
