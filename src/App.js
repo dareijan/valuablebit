@@ -1,6 +1,7 @@
 import "./styles.css";
 import { styled, useTheme } from "@mui/material/styles";
 import LinearProgress from "@mui/material/LinearProgress";
+
 import Typography from '@mui/material/Typography';
 
 const colorMapping = {
@@ -18,16 +19,6 @@ const colorMapping = {
   90: "darkgreen",    
 };
 
-const BorderLinearProgress = styled(LinearProgress)(({ theme, ...props }) => ({
-  margin: 10,
-  height: 15,
-  backgroundColor: "#ddd",
-
-  ["& .MuiLinearProgress-bar"]: {
-    backgroundColor: colorMapping[props.value],
-    borderRight: "3px solid  #fff",
-  },
-}));
 
 const Container = styled("div")(({ theme }) => ({
   boxShadow: theme.shadows[2],
@@ -43,202 +34,189 @@ export default function App() {
       style={{ display: "flex", flexDirection: "column", gap: "10px" }}
     >
       <Container>
-        <div>Oravat</div>
-        <BorderLinearProgress variant="determinate" value={5} />     
-      </Container>   
-      <Container>
         <div>Jousi</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={5} />     
       </Container>            
       <Container>
-        <div>○ Amiga (It Came From The Desert)</div>
-        <BorderLinearProgress variant="determinate" value={10} />     
+        <div>Amiga (It Came From The Desert)</div>
+        <LinearProgress variant="determinate" value={10} />     
       </Container>
       <Container>
         <div>Amiga (Spherical)</div>
-        <BorderLinearProgress variant="determinate" value={10} />     
+        <LinearProgress variant="buffer" value={10} valueBuffer={40} />
       </Container>
       <Container>
         <div>Amiga (Lemmings)</div>
-        <BorderLinearProgress variant="determinate" value={5} />     
+        <LinearProgress variant="determinate" value={5} />     
       </Container>                
       <Container>
         <div>PC (Bud Redhead)</div>
-        <BorderLinearProgress variant="determinate" value={50} />     
+        <LinearProgress variant="determinate" value={50} />     
       </Container>
       <Container>
         <div>PC (Indiana Jones and the fate of Atlantis)</div>
-        <BorderLinearProgress variant="determinate" value={2} />     
+        <LinearProgress variant="determinate" value={2} />     
       </Container>      
       <Container>
         <div>PC (lasten opetuspelit)</div>
-        <BorderLinearProgress variant="determinate" value={20} />     
-      </Container>     
+        <LinearProgress variant="determinate" value={20} />     
+      </Container>                       
       <Container>
-        <div>○ Peli (Plague Tale Innocence)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
-      </Container>                      
-      <Container>
-        <div>○ Peli (AC Rogue)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <div>Peli (AC Rogue)</div>        
+        <LinearProgress variant="determinate" value={10} />
       </Container>  
       <Container>
         <div>Peli (AC Origins)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <LinearProgress variant="determinate" value={10} />
       </Container>    
       <Container>
         <div>Peli (D rally)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <LinearProgress variant="determinate" value={10} />
       </Container>  
       <Container>
         <div>Peli(360) (AC II)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <LinearProgress variant="determinate" value={10} />
       </Container>    
       <Container>
         <div>Peli 360 (Witcher II)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <LinearProgress variant="determinate" value={10} />
       </Container>
       <Container>
         <div>Peli (Hectic)</div>        
-        <BorderLinearProgress variant="determinate" value={5} />
+        <LinearProgress variant="determinate" value={5} />
       </Container>   
       <Container>
-        <div>Peli (LS Before The Storm)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <div>Peli (Life Is Strange Before The Storm)</div>        
+        <LinearProgress variant="determinate" variant="buffer" value={10} valueBuffer={40} />
       </Container> 
       <Container>
-        <div>Peli (LS 2)</div>        
-        <BorderLinearProgress variant="determinate" value={2} />
+        <div>Peli (Life Is Strange 2)</div>        
+        <LinearProgress variant="determinate" value={2} />
       </Container> 
       <Container>
-        <div>Peli (SW Jedi Order)</div>        
-        <BorderLinearProgress variant="determinate" value={5} />
+        <div>Peli (Star Wars Jedi Order)</div>        
+        <LinearProgress variant="determinate" value={5} />
       </Container>      
       <Container>
-        <div>○ Peli (Plague Tale Innocance)</div>        
-        <BorderLinearProgress variant="determinate" value={60} />
+        <div>Peli (Plague Tale Innocance)</div>        
+        <LinearProgress variant="buffer" value={40} valueBuffer={60} />
       </Container>      
       <Container>
         <div>Peli (Tomb Raider)</div>        
-        <BorderLinearProgress variant="determinate" value={40} />
+        <LinearProgress variant="determinate" value={40} />
       </Container>                                         
       <Container>
-        <div>○ Peli (Twitch)</div>        
-        <BorderLinearProgress variant="determinate" value={70} />
-      </Container>
-      <Container>
-        <div>Peli (JD 2017)</div>        
-        <BorderLinearProgress variant="determinate" value={20} />
+        <div>Peli (Just Dance 2017)</div>        
+        <LinearProgress variant="determinate" value={20} />
       </Container>     
       <Container>
-        <div>Peli (JD 2020)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <div>Peli (Just Dance 2020)</div>        
+        <LinearProgress variant="determinate" value={10} />
       </Container>        
       <Container>
-        <div>Peli (JD 2021)</div>        
-        <BorderLinearProgress variant="determinate" value={10} />
+        <div>Peli (Just Dance 2021)</div>        
+        <LinearProgress variant="determinate" value={10} />
       </Container>          
       <Container>
         <div>Peli (Alan Wake)</div>        
-        <BorderLinearProgress variant="determinate" value={1} />
+        <LinearProgress variant="determinate" value={5} />
       </Container>
-
       <Container>
         <div>GB (DuckTales II)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container> 
       <Container>
         <div>GB (Donkey Kong)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>GB (Kirby)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>GB (I)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>GB (II)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>GB (III)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>GB (IV)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>      
       <Container>
         <div>GB (VI)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>   
       <Container>
         <div>GB (VII)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>   
 
       <Container>
         <div>Amiga (I)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container> 
       <Container>
         <div>Amiga (II)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Amiga (III)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Amiga (IV)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Amiga (V)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Amiga (VI)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>            
       <Container>
         <div>Amiga (VII)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container> 
       <Container>
         <div>Peli (I)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container> 
       <Container>
         <div>Peli (II)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Peli (III)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Peli (IV)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Peli (I)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container> 
       <Container>
         <div>Peli (II)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Peli (III)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>
       <Container>
         <div>Peli (IV)</div>
-        <BorderLinearProgress variant="determinate" value={0} />     
+        <LinearProgress variant="determinate" value={0} />     
       </Container>      
     </div>
   );

@@ -3,3 +3,8 @@
     text-align: center;
   }
   
+  div {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 8pt;
+   margin-bottom: 10pt;
+  }
