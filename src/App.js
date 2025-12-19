@@ -39,11 +39,11 @@ export default function App() {
       </Container>            
       <Container>
         <div>Amiga (It Came From The Desert)</div>
-        <LinearProgress variant="determinate" value={10} />     
+        <LinearProgress variant="buffer" value={10} valueBuffer={50} />
       </Container>
       <Container>
         <div>Amiga (Spherical)</div>
-        <LinearProgress variant="buffer" value={10} valueBuffer={40} />
+        <LinearProgress variant="buffer" value={10} valueBuffer={50} />
       </Container>
       <Container>
         <div>Amiga (Lemmings)</div>
@@ -74,7 +74,7 @@ export default function App() {
         <LinearProgress variant="determinate" value={10} />
       </Container>  
       <Container>
-        <div>Peli(360) (AC II)</div>        
+        <div>Peli360 (AC II)</div>        
         <LinearProgress variant="determinate" value={10} />
       </Container>    
       <Container>
@@ -107,11 +107,11 @@ export default function App() {
       </Container>                                         
       <Container>
         <div>Peli (Just Dance 2017)</div>        
-        <LinearProgress variant="determinate" value={20} />
+        <LinearProgress variant="determinate" variant="buffer" value={20} valueBuffer={60} />
       </Container>     
       <Container>
         <div>Peli (Just Dance 2020)</div>        
-        <LinearProgress variant="determinate" value={10} />
+        <LinearProgress variant="determinate" variant="buffer" value={10} valueBuffer={60} />
       </Container>        
       <Container>
         <div>Peli (Just Dance 2021)</div>        
