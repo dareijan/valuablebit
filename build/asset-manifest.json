@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/valuablebit/static/css/main.5b2d6b25.css",
-    "main.js": "/valuablebit/static/js/main.b6c40e84.js",
+    "main.css": "/valuablebit/static/css/main.35cb4198.css",
+    "main.js": "/valuablebit/static/js/main.91647c94.js",
     "index.html": "/valuablebit/index.html",
-    "main.5b2d6b25.css.map": "/valuablebit/static/css/main.5b2d6b25.css.map",
-    "main.b6c40e84.js.map": "/valuablebit/static/js/main.b6c40e84.js.map"
+    "main.35cb4198.css.map": "/valuablebit/static/css/main.35cb4198.css.map",
+    "main.91647c94.js.map": "/valuablebit/static/js/main.91647c94.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2d6b25.css",
-    "static/js/main.b6c40e84.js"
+    "static/css/main.35cb4198.css",
+    "static/js/main.91647c94.js"
   ]
 }
